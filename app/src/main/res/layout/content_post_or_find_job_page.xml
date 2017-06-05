@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.howard.gogenie.postOrFindJobPage"
+    tools:showIn="@layout/activity_post_or_find_job_page">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recuitButton"
+        android:src="@drawable/recuit"
+        android:padding="1dp"
+        tools:layout_editor_absoluteY="371dp"
+        tools:layout_editor_absoluteX="144dp"
+        android:layout_marginBottom="109dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/findButton"
+        android:src="@drawable/find"
+        android:padding="1dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:layout_editor_absoluteX="144dp"
+        android:layout_marginBottom="191dp"
+        android:layout_above="@+id/engButton"
+        android:layout_alignLeft="@+id/engButton"
+        android:layout_alignStart="@+id/engButton" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.howard.gogenie.LoginPage">
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="輸入密碼"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:visibility="visible"
+        android:layout_below="@+id/Email"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Password"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="電郵地址"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Password"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignRight="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorGreenBlue"
+        android:text="登入"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="未有帳戶？建立新帳戶"
+        android:textColor="@color/colorGreenBlue" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="6dp"
+        android:text="建立新帳戶"
+        android:textColor="@color/colorGreenBlue"
+        android:textSize="14sp"
+        android:layout_below="@+id/registerTextView"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_alignEnd="@+id/loginButton" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorWhite"
+        android:text="忘記密碼"
+        android:textColor="@color/colorGreenBlue"
+        android:textSize="10sp" />
+</RelativeLayout>
